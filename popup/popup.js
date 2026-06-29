@@ -404,7 +404,7 @@
 	});
 
 	if(navigator.userAgentData.brands.some(i => i.brand == 'YaBrowser') && location.hash != '#import'){
-		q('#account>#import_maFile').on('click', () => chrome.tabs.create({url: chrome.extension.getURL('popup/popup.html#import'), active: true}));
+		q('#account>#import_maFile').on('click', () => chrome.tabs.create({url: chrome.runtime.getURL('popup/popup.html#import'), active: true}));
 	}else{
 		history.replaceState('', '', '/popup/popup.html');
 		q('#account>#import_maFile').on('click', () => q('input[name="import_maFile"]').action('click'));

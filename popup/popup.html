@@ -5,7 +5,7 @@
 	<link rel="shortcut icon" href="/icon128.png" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="popup.css">
 	<link rel="stylesheet" type="text/css" href="/round_menu/style.css">
-	<script type="text/javascript" src="../mobileconf/scripts/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="../mobileconf/scripts/jquery-4.0.0.min.js"></script>
 </head>
 <body>
 	<div class="global_block">
@@ -45,7 +45,7 @@
 			<input id="account_name" type="text" name="account_name" autocomplete="off" readonly="">
 			<label for="password">Password</label>
 			<input id="password" type="password" name="password" autocomplete="off">
-			<div class="info" data-after="Shared secret" data-before="needed to generate 2FA code"></div>
+			<div class="info" data-after="Shared secret or 2FA" data-before="Generate 2FA code from Steam Guard"></div>
 			<label for="twofa" data-maxlength="40" data-type="password" data-name="shared_secret">Shared secret</label>
 			<span>or</span>
 			<label for="twofa" data-maxlength="7" data-type="text" data-name="twofacode">2FA</label>
@@ -58,7 +58,7 @@
 			<input id="device_id" type="password" name="device_id" autocomplete="off" maxlength="44" disabled="">
 			<input name="import_maFile" type="file" hidden="">
 			<div class="button" id="import_maFile">Import maFile</div>
-			<div class="button" id="save" data-edit="Save" data-add="Adding"></div>
+			<div class="button" id="save" data-edit="Save" data-add="Add Account"></div>
 		</form>
 		<div class="dialog">
 			<div class="close"></div>
