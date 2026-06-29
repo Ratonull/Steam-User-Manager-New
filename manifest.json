@@ -32,7 +32,7 @@
    "manifest_version": 2,
    "browser_specific_settings": {
       "gecko": {
-         "id": "ratonulmiauna@proton.me",
+         "id": "example",
          "data_collection_permissions": {
             "required": [
                "none"
